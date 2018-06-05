@@ -1,9 +1,8 @@
-
-BIN ?= UTILITYNAME
+BIN ?= shellutil
 PREFIX ?= /usr/local
 
 install:
-	cp UTILITYNAME.sh $(PREFIX)/bin/$(BIN)
+	cp shellutil.sh $(PREFIX)/bin/$(BIN)
 	chmod +x $(PREFIX)/bin/$(BIN)
 
 uninstall:
