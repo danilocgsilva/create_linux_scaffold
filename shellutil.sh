@@ -4,17 +4,13 @@
 VERSION="0.0.0"
 
 ## Rights a single line entry to a file
-right_line () {
-  echo "$1" >> $1
+write_line () {
+  echo "$1" >> $2
 }
 
 ## Builds the readme
 build_readme () {
-  right_line '# $1' $1
-}
-
-build_makefile () {
-	
+  write_line "# $1" README.md
 }
 
 ## Main function
