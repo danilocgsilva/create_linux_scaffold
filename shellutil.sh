@@ -13,6 +13,7 @@ build_readme () {
   write_line "# $1" README.md
 }
 
+# builds the makefile
 build_makefile () {
   write_line "BIN ?= shellutil" Makefile
   write_line "PREFIX ?= /usr/local" Makefile
