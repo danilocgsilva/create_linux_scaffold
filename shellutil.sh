@@ -31,7 +31,7 @@ $1 () {
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
   export -f $1
 else
-  $1 "${@}"
+  $1 "\${@}"
   exit $?
 fi
 EOF
